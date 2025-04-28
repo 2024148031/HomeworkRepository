@@ -1,5 +1,4 @@
-/* --- 로그인/회원가입 기본 스타일 유지 --- */
-
+/* --- 로그인/회원가입용 스타일 --- */
 body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
@@ -13,7 +12,7 @@ body {
     padding: 30px;
     border: 1px solid #ddd;
     border-radius: 8px;
-    margin: 0 auto; /* 중앙 정렬 */
+    margin: 0 auto;
   }
   
   .top-link {
@@ -82,8 +81,7 @@ body {
     opacity: 0.9;
   }
   
-  /* --- index.html 전용 스타일 추가 --- */
-  
+  /* --- 메인페이지(index.html) 전용 스타일 --- */
   .wrapper {
     display: flex;
     flex-direction: column;
@@ -168,24 +166,35 @@ body {
     transform: scale(1.2);
   }
   
-  /* 영화 제목, 설명 텍스트 스타일 */
-  .movie-text {
+  /* hover 시 이미지 위에 영화 제목 표시 */
+  .movie-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    pointer-events: none;
+  }
+  
+  .movie-image:hover .movie-title {
+    opacity: 1;
+  }
+  
+  /* 포스터 밑에 설명 표시 */
+  .movie-description {
     text-align: center;
     margin-top: 10px;
-  }
-  
-  .movie-text h3 {
-    margin: 5px 0;
-    font-size: 20px;
-    color: #333;
-  }
-  
-  .movie-text p {
     font-size: 16px;
-    color: #666;
+    color: #555;
   }
   
-  /* 반응형 레이아웃 */
+  /* 반응형 */
   @media (max-width: 480px) {
     .main-content {
       flex-direction: column;
