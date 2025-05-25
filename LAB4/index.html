@@ -69,12 +69,17 @@
       rating.className = 'movie-rating';
       rating.textContent = `평점: ${movie.rating}`;
 
+      const release = document.createElement('div');
+      release.className = 'movie-release';
+      release.textContent = `개봉일: ${movie.release_date || '정보 없음'}`;
+
       const description = document.createElement('div');
       description.className = 'movie-description';
       description.textContent = movie.description;
 
       card.appendChild(imageWrapper);
       card.appendChild(rating);
+      card.appendChild(release);
       card.appendChild(description);
 
       return card;
@@ -120,7 +125,7 @@
       }
     }
 
-    fetch('https://2024148031.github.io/HomeworkRepository/LAB4/product.json')
+    fetch('product.json')
       .then(res => res.json())
       .then(data => {
         allMovies = data;
