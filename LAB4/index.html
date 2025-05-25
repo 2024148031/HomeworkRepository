@@ -9,7 +9,7 @@
 <body>
   <div class="wrapper">
     <header class="header">
-      <h1>내가 좋아하는 영화</h1>
+      <h1 class="slide-text">내가 좋아하는 영화</h1>
     </header>
 
     <nav class="nav">
@@ -40,13 +40,19 @@
     const movieList = document.getElementById('movie-list');
     const searchInput = document.getElementById('search-input');
     const sortSelect = document.getElementById('sort-select');
+
     let allMovies = [];
+    let filteredMovies = [];
     let shownCount = 0;
     const BATCH_SIZE = 6;
+    let loading = false;
 
     function createMovieCard(movie) {
       const card = document.createElement('section');
       card.className = 'movie-card';
+
+      const imageWrapper = document.createElement('div');
+      imageWrapper.className = 'movie-image';
 
       const img = document.createElement('img');
       img.src = movie.image;
@@ -56,6 +62,9 @@
       title.className = 'movie-title';
       title.textContent = movie.title;
 
+      imageWrapper.appendChild(img);
+      imageWrapper.appendChild(title);
+
       const rating = document.createElement('div');
       rating.className = 'movie-rating';
       rating.textContent = `평점: ${movie.rating}`;
@@ -64,22 +73,11 @@
       description.className = 'movie-description';
       description.textContent = movie.description;
 
-      card.appendChild(img);
-      card.appendChild(title);
+      card.appendChild(imageWrapper);
       card.appendChild(rating);
       card.appendChild(description);
 
       return card;
-    }
-
-    function renderMovies(clear = false) {
-      if (clear) movieList.innerHTML = '';
-      const keyword = searchInput.value.toLowerCase();
-      const sortedMovies = sortMovies([...allMovies]);
-      const filtered = sortedMovies.filter(m => m.title.toLowerCase().includes(keyword));
-      const slice = filtered.slice(shownCount, shownCount + BATCH_SIZE);
-      slice.forEach(movie => movieList.appendChild(createMovieCard(movie)));
-      shownCount += BATCH_SIZE;
     }
 
     function sortMovies(movies) {
@@ -93,9 +91,33 @@
       }
     }
 
+    function renderMovies(clear = false) {
+      if (clear) {
+        movieList.innerHTML = '';
+        shownCount = 0;
+      }
+
+      const keyword = searchInput.value.toLowerCase();
+      filteredMovies = sortMovies(
+        allMovies.filter(m => m.title.toLowerCase().includes(keyword))
+      );
+
+      const slice = filteredMovies.slice(shownCount, shownCount + BATCH_SIZE);
+      slice.forEach(movie => movieList.appendChild(createMovieCard(movie)));
+      shownCount += slice.length;
+      loading = false;
+
+      if (shownCount >= filteredMovies.length) {
+        window.removeEventListener('scroll', handleScroll);
+      }
+    }
+
     function handleScroll() {
       const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
-      if (scrollTop + clientHeight >= scrollHeight - 10) renderMovies();
+      if (!loading && scrollTop + clientHeight >= scrollHeight - 20) {
+        loading = true;
+        setTimeout(() => renderMovies(), 100);
+      }
     }
 
     fetch('product.json')
@@ -107,12 +129,12 @@
       });
 
     searchInput.addEventListener('input', () => {
-      shownCount = 0;
+      window.addEventListener('scroll', handleScroll);
       renderMovies(true);
     });
 
     sortSelect.addEventListener('change', () => {
-      shownCount = 0;
+      window.addEventListener('scroll', handleScroll);
       renderMovies(true);
     });
   </script>
