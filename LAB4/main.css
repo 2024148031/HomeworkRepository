@@ -1,3 +1,4 @@
+
 /* --- 로그인/회원가입용 스타일 --- */
 body {
   font-family: Arial, sans-serif;
@@ -158,4 +159,69 @@ html, body {
   .movie-description {
     font-size: 0.85rem;
   }
+}
+
+/* 추가: 로그인/회원가입 카드 스타일 */
+.login-card {
+  max-width: 420px;
+  margin: 60px auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.login-card h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 24px;
+}
+
+.login-card label {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.login-card input,
+.login-card select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.login-card button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-card button:hover {
+  background-color: #1976d2;
+}
+
+.login-card .top-link {
+  text-align: right;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.login-card .top-link a {
+  color: #2196f3;
+  text-decoration: none;
+}
+
+.login-card .top-link a:hover {
+  text-decoration: underline;
 }

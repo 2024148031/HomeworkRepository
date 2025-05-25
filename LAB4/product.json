@@ -3,240 +3,280 @@
     "title": "Toy Story",
     "image": "images/Toy_Story.jpg",
     "rating": 7.7,
-    "description": "Led by Woody, Andy's toys live happily in his room until Andy's birthday brings Buzz Lightyear onto the scene. Afraid of losing his place in Andy's heart, Wo..."
+    "description": "Led by Woody, Andy's toys live happily in his room until Andy's birthday brings Buzz Lightyear onto the scene. Afraid of losing his place in Andy's heart, Wo...",
+    "release_date": "1995-10-30"
   },
   {
     "title": "Jumanji",
     "image": "images/Jumanji.jpg",
     "rating": 6.9,
-    "description": "When siblings Judy and Peter discover an enchanted board game that opens the door to a magical world, they unwittingly invite Alan -- an adult who's been tra..."
+    "description": "When siblings Judy and Peter discover an enchanted board game that opens the door to a magical world, they unwittingly invite Alan -- an adult who's been tra...",
+    "release_date": "1995-12-15"
   },
   {
     "title": "Grumpier Old Men",
     "image": "images/Grumpier_Old_Men.jpg",
     "rating": 6.5,
-    "description": "A family wedding reignites the ancient feud between next-door neighbors and fishing buddies John and Max. Meanwhile, a sultry Italian divorcée opens a restau..."
+    "description": "A family wedding reignites the ancient feud between next-door neighbors and fishing buddies John and Max. Meanwhile, a sultry Italian divorcée opens a restau...",
+    "release_date": "1995-12-22"
   },
   {
     "title": "Waiting to Exhale",
     "image": "images/Waiting_to_Exhale.jpg",
     "rating": 6.1,
-    "description": "Cheated on, mistreated and stepped on, the women are holding their breath, waiting for the elusive \"good man\" to break a string of less-than-stellar lovers. ..."
+    "description": "Cheated on, mistreated and stepped on, the women are holding their breath, waiting for the elusive \"good man\" to break a string of less-than-stellar lovers. ...",
+    "release_date": "1995-12-22"
   },
   {
     "title": "Father of the Bride Part II",
     "image": "images/Father_of_the_Bride_Part_II.jpg",
     "rating": 5.7,
-    "description": "Just when George Banks has recovered from his daughter's wedding, he receives the news that she's pregnant ... and that George's wife, Nina, is expecting too..."
+    "description": "Just when George Banks has recovered from his daughter's wedding, he receives the news that she's pregnant ... and that George's wife, Nina, is expecting too...",
+    "release_date": "1995-02-10"
   },
   {
     "title": "Heat",
     "image": "images/Heat.jpg",
     "rating": 7.7,
-    "description": "Obsessive master thief, Neil McCauley leads a top-notch crew on various insane heists throughout Los Angeles while a mentally unstable detective, Vincent Han..."
+    "description": "Obsessive master thief, Neil McCauley leads a top-notch crew on various insane heists throughout Los Angeles while a mentally unstable detective, Vincent Han...",
+    "release_date": "1995-12-15"
   },
   {
     "title": "Sabrina",
     "image": "images/Sabrina.jpg",
     "rating": 6.2,
-    "description": "An ugly duckling having undergone a remarkable change, still harbors feelings for her crush: a carefree playboy, but not before his business-focused brother ..."
+    "description": "An ugly duckling having undergone a remarkable change, still harbors feelings for her crush: a carefree playboy, but not before his business-focused brother ...",
+    "release_date": "1995-12-15"
   },
   {
     "title": "Tom and Huck",
     "image": "images/Tom_and_Huck.jpg",
     "rating": 5.4,
-    "description": "A mischievous young boy, Tom Sawyer, witnesses a murder by the deadly Injun Joe. Tom becomes friends with Huckleberry Finn, a boy with no future and no famil..."
+    "description": "A mischievous young boy, Tom Sawyer, witnesses a murder by the deadly Injun Joe. Tom becomes friends with Huckleberry Finn, a boy with no future and no famil...",
+    "release_date": "1995-12-22"
   },
   {
     "title": "Sudden Death",
     "image": "images/Sudden_Death.jpg",
     "rating": 5.5,
-    "description": "International action superstar Jean Claude Van Damme teams with Powers Boothe in a Tension-packed, suspense thriller, set against the back-drop of a Stanley ..."
+    "description": "International action superstar Jean Claude Van Damme teams with Powers Boothe in a Tension-packed, suspense thriller, set against the back-drop of a Stanley ...",
+    "release_date": "1995-12-22"
   },
   {
     "title": "GoldenEye",
     "image": "images/GoldenEye.jpg",
     "rating": 6.6,
-    "description": "James Bond must unmask the mysterious head of the Janus Syndicate and prevent the leader from utilizing the GoldenEye weapons system to inflict devastating r..."
+    "description": "James Bond must unmask the mysterious head of the Janus Syndicate and prevent the leader from utilizing the GoldenEye weapons system to inflict devastating r...",
+    "release_date": "1995-11-16"
   },
   {
     "title": "The American President",
     "image": "images/The_American_President.jpg",
     "rating": 6.5,
-    "description": "Widowed U.S. president Andrew Shepherd, one of the world's most powerful men, can have anything he wants -- and what he covets most is Sydney Ellen Wade, a W..."
+    "description": "Widowed U.S. president Andrew Shepherd, one of the world's most powerful men, can have anything he wants -- and what he covets most is Sydney Ellen Wade, a W...",
+    "release_date": "1995-11-17"
   },
   {
     "title": "Dracula: Dead and Loving It",
     "image": "images/Dracula_Dead_and_Loving_It.jpg",
     "rating": 5.7,
-    "description": "When a lawyer shows up at the vampire's doorstep, he falls prey to his charms and joins him in his search for fresh blood. Enter Dr. van Helsing, who may be ..."
+    "description": "When a lawyer shows up at the vampire's doorstep, he falls prey to his charms and joins him in his search for fresh blood. Enter Dr. van Helsing, who may be ...",
+    "release_date": "1995-12-22"
   },
   {
     "title": "Balto",
     "image": "images/Balto.jpg",
     "rating": 7.1,
-    "description": "An outcast half-wolf risks his life to prevent a deadly epidemic from ravaging Nome, Alaska."
+    "description": "An outcast half-wolf risks his life to prevent a deadly epidemic from ravaging Nome, Alaska.",
+    "release_date": "1995-12-22"
   },
   {
     "title": "Nixon",
     "image": "images/Nixon.jpg",
     "rating": 7.1,
-    "description": "An all-star cast powers this epic look at American President Richard M. Nixon, a man carrying the fate of the world on his shoulders while battling the self-..."
+    "description": "An all-star cast powers this epic look at American President Richard M. Nixon, a man carrying the fate of the world on his shoulders while battling the self-...",
+    "release_date": "1995-12-22"
   },
   {
     "title": "Cutthroat Island",
     "image": "images/Cutthroat_Island.jpg",
     "rating": 5.7,
-    "description": "Morgan Adams and her slave, William Shaw, are on a quest to recover the three portions of a treasure map. Unfortunately, the final portion is held by her mur..."
+    "description": "Morgan Adams and her slave, William Shaw, are on a quest to recover the three portions of a treasure map. Unfortunately, the final portion is held by her mur...",
+    "release_date": "1995-12-22"
   },
   {
     "title": "Casino",
     "image": "images/Casino.jpg",
     "rating": 7.8,
-    "description": "The life of the gambling paradise – Las Vegas – and its dark mafia underbelly."
+    "description": "The life of the gambling paradise – Las Vegas – and its dark mafia underbelly.",
+    "release_date": "1995-11-22"
   },
   {
     "title": "Sense and Sensibility",
     "image": "images/Sense_and_Sensibility.jpg",
     "rating": 7.2,
-    "description": "Rich Mr. Dashwood dies, leaving his second wife and her daughters poor by the rules of inheritance. Two daughters are the titular opposites."
+    "description": "Rich Mr. Dashwood dies, leaving his second wife and her daughters poor by the rules of inheritance. Two daughters are the titular opposites.",
+    "release_date": "1995-12-13"
   },
   {
     "title": "Four Rooms",
     "image": "images/Four_Rooms.jpg",
     "rating": 6.5,
-    "description": "It's Ted the Bellhop's first night on the job...and the hotel's very unusual guests are about to place him in some outrageous predicaments. It seems that thi..."
+    "description": "It's Ted the Bellhop's first night on the job...and the hotel's very unusual guests are about to place him in some outrageous predicaments. It seems that thi...",
+    "release_date": "1995-12-09"
   },
   {
     "title": "Ace Ventura: When Nature Calls",
     "image": "images/Ace_Ventura_When_Nature_Calls.jpg",
     "rating": 6.1,
-    "description": "Summoned from an ashram in Tibet, Ace finds himself on a perilous journey into the jungles of Africa to find Shikaka, the missing sacred animal of the friend..."
+    "description": "Summoned from an ashram in Tibet, Ace finds himself on a perilous journey into the jungles of Africa to find Shikaka, the missing sacred animal of the friend...",
+    "release_date": "1995-11-10"
   },
   {
     "title": "Money Train",
     "image": "images/Money_Train.jpg",
     "rating": 5.4,
-    "description": "A vengeful New York transit cop decides to steal a trainload of subway fares; his foster brother, a fellow cop, tries to protect him."
+    "description": "A vengeful New York transit cop decides to steal a trainload of subway fares; his foster brother, a fellow cop, tries to protect him.",
+    "release_date": "1995-11-21"
   },
   {
     "title": "Get Shorty",
     "image": "images/Get_Shorty.jpg",
     "rating": 6.4,
-    "description": "Chili Palmer is a Miami mobster who gets sent by his boss, the psychopathic \"Bones\" Barboni, to collect a bad debt from Harry Zimm, a Hollywood producer who ..."
+    "description": "Chili Palmer is a Miami mobster who gets sent by his boss, the psychopathic \"Bones\" Barboni, to collect a bad debt from Harry Zimm, a Hollywood producer who ...",
+    "release_date": "1995-10-20"
   },
   {
     "title": "Copycat",
     "image": "images/Copycat.jpg",
     "rating": 6.5,
-    "description": "An agoraphobic psychologist and a female detective must work together to take down a serial killer who copies serial killers from the past."
+    "description": "An agoraphobic psychologist and a female detective must work together to take down a serial killer who copies serial killers from the past.",
+    "release_date": "1995-10-27"
   },
   {
     "title": "Assassins",
     "image": "images/Assassins.jpg",
     "rating": 6.0,
-    "description": "Assassin Robert Rath arrives at a funeral to kill a prominent mobster, only to witness a rival hired gun complete the job for him -- with grisly results. Hor..."
+    "description": "Assassin Robert Rath arrives at a funeral to kill a prominent mobster, only to witness a rival hired gun complete the job for him -- with grisly results. Hor...",
+    "release_date": "1995-10-06"
   },
   {
     "title": "Powder",
     "image": "images/Powder.jpg",
     "rating": 6.3,
-    "description": "Harassed by classmates who won't accept his shocking appearance, a shy young man known as \"Powder\" struggles to fit in. But the cruel taunts stop when Powder..."
+    "description": "Harassed by classmates who won't accept his shocking appearance, a shy young man known as \"Powder\" struggles to fit in. But the cruel taunts stop when Powder...",
+    "release_date": "1995-10-27"
   },
   {
     "title": "Leaving Las Vegas",
     "image": "images/Leaving_Las_Vegas.jpg",
     "rating": 7.1,
-    "description": "Ben Sanderson, an alcoholic Hollywood screenwriter who lost everything because of his drinking, arrives in Las Vegas to drink himself to death. There, he mee..."
+    "description": "Ben Sanderson, an alcoholic Hollywood screenwriter who lost everything because of his drinking, arrives in Las Vegas to drink himself to death. There, he mee...",
+    "release_date": "1995-10-27"
   },
   {
     "title": "Othello",
     "image": "images/Othello.jpg",
     "rating": 7.0,
-    "description": "The evil Iago pretends to be friend of Othello in order to manipulate him to serve his own end in the film version of this Shakespeare classic."
+    "description": "The evil Iago pretends to be friend of Othello in order to manipulate him to serve his own end in the film version of this Shakespeare classic.",
+    "release_date": "1995-12-15"
   },
   {
     "title": "Now and Then",
     "image": "images/Now_and_Then.jpg",
     "rating": 6.6,
-    "description": "Waxing nostalgic about the bittersweet passage from childhood to puberty in this tender coming-of-age tale, four childhood girlfriends -- Teeny, Chrissy, Sam..."
+    "description": "Waxing nostalgic about the bittersweet passage from childhood to puberty in this tender coming-of-age tale, four childhood girlfriends -- Teeny, Chrissy, Sam...",
+    "release_date": "1995-10-20"
   },
   {
     "title": "Persuasion",
     "image": "images/Persuasion.jpg",
     "rating": 7.4,
-    "description": "This film adaptation of Jane Austen's last novel follows Anne Elliot, the daughter of a financially troubled aristocratic family, who is persuaded to break h..."
+    "description": "This film adaptation of Jane Austen's last novel follows Anne Elliot, the daughter of a financially troubled aristocratic family, who is persuaded to break h...",
+    "release_date": "1995-09-27"
   },
   {
     "title": "The City of Lost Children",
     "image": "images/The_City_of_Lost_Children.jpg",
     "rating": 7.6,
-    "description": "A scientist in a surrealist society kidnaps children to steal their dreams, hoping that they slow his aging process."
+    "description": "A scientist in a surrealist society kidnaps children to steal their dreams, hoping that they slow his aging process.",
+    "release_date": "1995-05-16"
   },
   {
     "title": "Shanghai Triad",
     "image": "images/Shanghai_Triad.jpg",
     "rating": 6.5,
-    "description": "A provincial boy related to a Shanghai crime family is recruited by his uncle into cosmopolitan Shanghai in the 1930s to be a servant to a ganglord's mistress."
+    "description": "A provincial boy related to a Shanghai crime family is recruited by his uncle into cosmopolitan Shanghai in the 1930s to be a servant to a ganglord's mistress.",
+    "release_date": "1995-04-30"
   },
   {
     "title": "Dangerous Minds",
     "image": "images/Dangerous_Minds.jpg",
     "rating": 6.4,
-    "description": "Former Marine Louanne Johnson lands a gig teaching in a pilot program for bright but underachieving teens at a notorious inner-city high school. After having..."
+    "description": "Former Marine Louanne Johnson lands a gig teaching in a pilot program for bright but underachieving teens at a notorious inner-city high school. After having...",
+    "release_date": "1995-08-11"
   },
   {
     "title": "Twelve Monkeys",
     "image": "images/Twelve_Monkeys.jpg",
     "rating": 7.4,
-    "description": "In the year 2035, convict James Cole reluctantly volunteers to be sent back in time to discover the origin of a deadly virus that wiped out nearly all of the..."
+    "description": "In the year 2035, convict James Cole reluctantly volunteers to be sent back in time to discover the origin of a deadly virus that wiped out nearly all of the...",
+    "release_date": "1995-12-29"
   },
   {
     "title": "Babe",
     "image": "images/Babe.jpg",
     "rating": 6.0,
-    "description": "Babe is a little pig who doesn't quite know his place in the world. With a bunch of odd friends, like Ferdinand the duck who thinks he is a rooster and Fly t..."
+    "description": "Babe is a little pig who doesn't quite know his place in the world. With a bunch of odd friends, like Ferdinand the duck who thinks he is a rooster and Fly t...",
+    "release_date": "1995-07-18"
   },
   {
     "title": "Carrington",
     "image": "images/Carrington.jpg",
     "rating": 6.4,
-    "description": "The story of the relationship between painter Dora Carrington and author Lytton Strachey in a World War One England of cottages and countryside. Although pla..."
+    "description": "The story of the relationship between painter Dora Carrington and author Lytton Strachey in a World War One England of cottages and countryside. Although pla...",
+    "release_date": "1995-11-08"
   },
   {
     "title": "Dead Man Walking",
     "image": "images/Dead_Man_Walking.jpg",
     "rating": 7.3,
-    "description": "A justice drama based on a true story about a man on death row who in his last days forms a strong relationship with a nun who teaches him forgiveness and gi..."
+    "description": "A justice drama based on a true story about a man on death row who in his last days forms a strong relationship with a nun who teaches him forgiveness and gi...",
+    "release_date": "1995-12-29"
   },
   {
     "title": "Across the Sea of Time",
     "image": "images/Across_the_Sea_of_Time.jpg",
     "rating": 3.5,
-    "description": "A young Russian boy, Thomas Minton, travels to New York as a passenger on a Russian freighter. Close to Ellis Island he gets off and thus starts his journey ..."
+    "description": "A young Russian boy, Thomas Minton, travels to New York as a passenger on a Russian freighter. Close to Ellis Island he gets off and thus starts his journey ...",
+    "release_date": "1995-10-20"
   },
   {
     "title": "It Takes Two",
     "image": "images/It_Takes_Two.jpg",
     "rating": 6.1,
-    "description": "Identical 9-year-olds from very different backgrounds: orphaned Amanda and wealthy Alyssa meet at summer camp and decide to switch places -- and play matchma..."
+    "description": "Identical 9-year-olds from very different backgrounds: orphaned Amanda and wealthy Alyssa meet at summer camp and decide to switch places -- and play matchma...",
+    "release_date": "1995-11-17"
   },
   {
     "title": "Clueless",
     "image": "images/Clueless.jpg",
     "rating": 6.9,
-    "description": "Shallow, rich and socially successful Cher is at the top of her Beverly Hills high school's pecking scale. Seeing herself as a matchmaker, Cher first coaxes ..."
+    "description": "Shallow, rich and socially successful Cher is at the top of her Beverly Hills high school's pecking scale. Seeing herself as a matchmaker, Cher first coaxes ...",
+    "release_date": "1995-07-19"
   },
   {
     "title": "Cry, the Beloved Country",
     "image": "images/Cry_the_Beloved_Country.jpg",
     "rating": 6.7,
-    "description": "A South-African preacher goes to search for his wayward son who has committed a crime in the big city."
+    "description": "A South-African preacher goes to search for his wayward son who has committed a crime in the big city.",
+    "release_date": "1995-12-15"
   },
   {
     "title": "Richard III",
     "image": "images/Richard_III.jpg",
     "rating": 6.9,
-    "description": "Shakespeare's Play transplanted into a 1930s setting."
+    "description": "Shakespeare's Play transplanted into a 1930s setting.",
+    "release_date": "1995-12-29"
   }
 ]
