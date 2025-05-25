@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>영화 검색 사이트</title>
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <h1>내가 좋아하는 영화</h1>
+    </header>
+
+    <nav class="nav">
+      <a href="index.html">메인 페이지</a>
+      <a href="login.html">로그인</a>
+      <a href="signup.html">회원가입</a>
+    </nav>
+
+    <section class="search-sort-bar">
+      <input type="text" id="search-input" placeholder="영화 제목 검색" />
+      <select id="sort-select">
+        <option value="">-- 정렬 선택 --</option>
+        <option value="title-asc">제목 오름차순</option>
+        <option value="title-desc">제목 내림차순</option>
+        <option value="rating-asc">평점 낮은순</option>
+        <option value="rating-desc">평점 높은순</option>
+      </select>
+    </section>
+
+    <main class="main-content" id="movie-list"></main>
+
+    <footer class="footer">
+      <p>&copy; 2025 나의 영화 웹사이트</p>
+    </footer>
+  </div>
+
+  <script>
+    const movieList = document.getElementById('movie-list');
+    const searchInput = document.getElementById('search-input');
+    const sortSelect = document.getElementById('sort-select');
+    let allMovies = [];
+    let shownCount = 0;
+    const BATCH_SIZE = 6;
+
+    function createMovieCard(movie) {
+      const card = document.createElement('section');
+      card.className = 'movie-card';
+
+      const img = document.createElement('img');
+      img.src = movie.image;
+      img.alt = movie.title;
+
+      const title = document.createElement('div');
+      title.className = 'movie-title';
+      title.textContent = movie.title;
+
+      const rating = document.createElement('div');
+      rating.className = 'movie-rating';
+      rating.textContent = `평점: ${movie.rating}`;
+
+      const description = document.createElement('div');
+      description.className = 'movie-description';
+      description.textContent = movie.description;
+
+      card.appendChild(img);
+      card.appendChild(title);
+      card.appendChild(rating);
+      card.appendChild(description);
+
+      return card;
+    }
+
+    function renderMovies(clear = false) {
+      if (clear) movieList.innerHTML = '';
+      const keyword = searchInput.value.toLowerCase();
+      const sortedMovies = sortMovies([...allMovies]);
+      const filtered = sortedMovies.filter(m => m.title.toLowerCase().includes(keyword));
+      const slice = filtered.slice(shownCount, shownCount + BATCH_SIZE);
+      slice.forEach(movie => movieList.appendChild(createMovieCard(movie)));
+      shownCount += BATCH_SIZE;
+    }
+
+    function sortMovies(movies) {
+      const type = sortSelect.value;
+      switch (type) {
+        case 'title-asc': return movies.sort((a, b) => a.title.localeCompare(b.title));
+        case 'title-desc': return movies.sort((a, b) => b.title.localeCompare(a.title));
+        case 'rating-asc': return movies.sort((a, b) => a.rating - b.rating);
+        case 'rating-desc': return movies.sort((a, b) => b.rating - a.rating);
+        default: return movies;
+      }
+    }
+
+    function handleScroll() {
+      const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
+      if (scrollTop + clientHeight >= scrollHeight - 10) renderMovies();
+    }
+
+    fetch('product.json')
+      .then(res => res.json())
+      .then(data => {
+        allMovies = data;
+        renderMovies(true);
+        window.addEventListener('scroll', handleScroll);
+      });
+
+    searchInput.addEventListener('input', () => {
+      shownCount = 0;
+      renderMovies(true);
+    });
+
+    sortSelect.addEventListener('change', () => {
+      shownCount = 0;
+      renderMovies(true);
+    });
+  </script>
+</body>
+</html>
