@@ -106,36 +106,44 @@
       slice.forEach(movie => movieList.appendChild(createMovieCard(movie)));
       shownCount += slice.length;
       loading = false;
-
-      if (shownCount >= filteredMovies.length) {
-        window.removeEventListener('scroll', handleScroll);
-      }
     }
 
     function handleScroll() {
       const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
       if (!loading && scrollTop + clientHeight >= scrollHeight - 20) {
         loading = true;
-        setTimeout(() => renderMovies(), 100);
+        setTimeout(() => {
+          if (shownCount < filteredMovies.length) {
+            renderMovies();
+          }
+        }, 100);
       }
     }
 
-    fetch('product.json')
+    fetch('https://2024148031.github.io/HomeworkRepository/LAB4/product.json')
       .then(res => res.json())
       .then(data => {
         allMovies = data;
+        filteredMovies = allMovies;
         renderMovies(true);
         window.addEventListener('scroll', handleScroll);
       });
 
-    searchInput.addEventListener('input', () => {
+    function resetScrollListener() {
+      window.removeEventListener('scroll', handleScroll);
       window.addEventListener('scroll', handleScroll);
+    }
+
+    searchInput.addEventListener('input', () => {
+      shownCount = 0;
       renderMovies(true);
+      resetScrollListener();
     });
 
     sortSelect.addEventListener('change', () => {
-      window.addEventListener('scroll', handleScroll);
+      shownCount = 0;
       renderMovies(true);
+      resetScrollListener();
     });
   </script>
 </body>
