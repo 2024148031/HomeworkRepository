@@ -114,7 +114,7 @@
     }
 
     function handleScroll() {
-      const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
+      const { scrollTop, scrollHeight, clientHeight } = document.scrollingElement || document.documentElement;
       if (!loading && scrollTop + clientHeight >= scrollHeight - 20) {
         loading = true;
         setTimeout(() => {
