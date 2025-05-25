@@ -1,52 +1,115 @@
-
 /* --- 로그인/회원가입용 스타일 --- */
 body {
   font-family: Arial, sans-serif;
   background-color: #f2f2f2;
-  padding: 0;
+  padding: 50px;
   margin: 0;
-  overflow-y: scroll;
 }
 
-html, body {
-  height: 100%;
+.container {
+  width: 400px;
+  height: auto;
+  background-color: white;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 0 auto;
 }
 
+.top-link {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.top-link a {
+  color: #2196f3;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.top-link a:hover {
+  text-decoration: underline;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+input,
+select,
+button {
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="radio"] {
+  width: auto;
+  margin-right: 5px;
+}
+
+.radio-group {
+  margin: 10px 0;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button[type="button"] {
+  background-color: #2196f3;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* --- 메인페이지(index.html) 전용 스타일 --- */
 .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 1020px;
   margin: 0 auto;
-  background-color: white;
-  padding: 20px;
-  min-height: 100%;
-  box-sizing: border-box;
 }
 
-/* 스크롤이 작동하려면 전체 페이지가 길어져야 하므로 아래 스타일 보강 */
-.main-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px;
-  min-height: 400px;
-  padding-bottom: 200px;
-}
-
-/* --- 메인 페이지 전용 스타일 --- */
 .header {
-  text-align: center;
-  padding: 20px 0;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .slide-text {
-  font-size: 32px;
-  animation: slidein 2s;
-  white-space: nowrap;
-  overflow: hidden;
+  display: inline-block;
+  font-size: 36px;
+  animation-name: slidein;
+  animation-duration: 2s;
 }
 
 @keyframes slidein {
-  from { transform: translateX(100%); }
-  to { transform: translateX(0); }
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 .nav {
@@ -56,7 +119,7 @@ html, body {
   background-color: #ffffff;
   padding: 15px;
   border-radius: 8px;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 .nav a {
@@ -65,54 +128,62 @@ html, body {
   font-weight: bold;
 }
 
-.search-sort-bar {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  margin-bottom: 20px;
+.nav a:hover {
+  text-decoration: underline;
 }
 
-.search-sort-bar input,
-.search-sort-bar select {
-  flex: 1;
-  padding: 10px;
-  font-size: 1rem;
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
 }
 
 .movie-card {
-  width: 300px;
+  flex: 0 1 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #ffffff;
   border: 1px solid #ddd;
   border-radius: 8px;
-  padding: 15px;
+  padding: 20px;
   box-sizing: border-box;
-  position: relative;
   overflow: hidden;
-  transition: box-shadow 0.3s ease;
+  position: relative;
 }
 
-.movie-card:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+.movie-image {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
 }
 
 .movie-image img {
   width: 100%;
   height: auto;
+  transition: transform 2s;
   border-radius: 4px;
 }
 
+.movie-image:hover img {
+  transform: scale(1.2);
+}
+
 .movie-title {
-  font-weight: bold;
-  margin-top: 10px;
+  margin-top: 12px;
   font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
   text-align: center;
 }
 
 .movie-rating,
 .movie-release {
-  text-align: center;
+  margin-top: 8px;
   font-size: 0.95rem;
-  color: #777;
+  color: #666;
+  text-align: center;
 }
 
 .movie-description {
@@ -120,14 +191,13 @@ html, body {
   bottom: 0;
   left: 0;
   right: 0;
+  padding: 12px;
   background-color: rgba(0, 0, 0, 0.85);
   color: white;
   font-size: 0.9rem;
-  padding: 10px;
   opacity: 0;
-  transition: opacity 0.4s ease;
-  max-height: 100%;
-  overflow-y: auto;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
 }
 
 .movie-card:hover .movie-description {
@@ -142,86 +212,42 @@ html, body {
   padding-bottom: 20px;
 }
 
-@media (max-width: 768px) {
-  .wrapper {
-    width: 95%;
-    padding: 10px;
-  }
-  .search-sort-bar {
+/* --- 반응형 미디어쿼리 --- */
+@media (max-width: 480px) {
+  .nav {
     flex-direction: column;
+    align-items: center;
   }
+
   .main-content {
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
+
   .movie-card {
-    width: 90%;
-  }
-  .movie-description {
-    font-size: 0.85rem;
+    flex: 0 0 90%;
+    max-width: 400px;
   }
 }
 
-/* 추가: 로그인/회원가입 카드 스타일 */
-.login-card {
-  max-width: 420px;
-  margin: 60px auto;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-  padding: 40px;
-  box-sizing: border-box;
+@media (min-width: 481px) and (max-width: 800px) {
+  .nav {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .main-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .movie-card {
+    flex: 0 1 45%;
+  }
 }
 
-.login-card h2 {
-  text-align: center;
-  margin-bottom: 24px;
-  font-size: 24px;
-}
-
-.login-card label {
-  display: block;
-  margin-top: 12px;
-  margin-bottom: 6px;
-  font-weight: bold;
-}
-
-.login-card input,
-.login-card select {
-  width: 100%;
-  padding: 10px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-
-.login-card button {
-  margin-top: 20px;
-  width: 100%;
-  padding: 12px;
-  background-color: #2196f3;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.login-card button:hover {
-  background-color: #1976d2;
-}
-
-.login-card .top-link {
-  text-align: right;
-  margin-bottom: 10px;
-  font-size: 14px;
-}
-
-.login-card .top-link a {
-  color: #2196f3;
-  text-decoration: none;
-}
-
-.login-card .top-link a:hover {
-  text-decoration: underline;
+@media (min-width: 801px) {
+  .main-content {
+    flex-direction: row;
+  }
 }
